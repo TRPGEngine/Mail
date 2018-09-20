@@ -47,6 +47,11 @@
         user-select: none;
         text-decoration: none;
       }
+
+      .footer {
+        text-align: right;
+        color: #ccc;
+      }
     </style>
   </head>
   <body>
@@ -55,6 +60,12 @@
       <h4>点击下方按钮或复制下面的链接进行邮箱验证：</h4>
       <p><a href="${data.link}" target="_blank">${data.link}</a></p>
       <a class="btn" href="${data.link}" target="_blank">马上验证</a>
+      <hr />
+      <p class="footer">
+        <span>来自TRPG Engine团队</span>
+        &nbsp;
+        <span>${new Date().Format('yyyy-MM-dd hh:mm')}</span>
+      </p>
     </div>
   </body>
 </html>
